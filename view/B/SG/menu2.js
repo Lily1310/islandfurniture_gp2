@@ -85,6 +85,9 @@ document.write('\
             <nav class="nav-main mega-menu">\
                 <ul class="nav nav-pills nav-main" id="mainMenu">\
                     <li>\
+                        <a href="/B/' + countryPrefix + '/showroom.html">Showroom</a>\
+                    </li>\
+                    <li>\
                         <a href="/B/' + countryPrefix + '/virtualStore.html">Virtual Store</a>\
                     </li>\
                     <li class="dropdown">\
@@ -102,6 +105,9 @@ document.write('\
                             <li><a href="/B/' + countryPrefix + '/furnitureCategory.html?cat=Children"><i class="icon icon-map-marker"></i> Children</a></li>\
                             <li><a id="retailProductLink"><i class="icon icon-coffee"></i> Retail Products</a></li>\
                         </ul>\
+                    </li>\
+                    <li>\
+                        <a href="/B/' + countryPrefix + '/promotion.html">Promotion</a>\
                     </li>\
                 </ul>\
             </nav>\

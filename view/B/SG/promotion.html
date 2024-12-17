@@ -1,37 +1,74 @@
-<script src="../checkCountry.js" ></script>
+<script src="../checkCountry.js"></script>
 <html>
-    <script src="../../header.js"></script>
-    <body>
-        <script src="menu2.js"></script>
-        <div role="main" class="main">
-            <section class="page-top">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2>Promotion</h2>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<script src="../../header.js"></script>
+<style>
+    .carousel-indicators li {
+        background-color: #A2020C;
+        /* Tomato color */
+    }
+
+    .carousel-indicators .active {
+        background-color: black;
+        /* Green color for the active indicator */
+    }
+</style>
+
+<body>
+    <script src="menu2.js"></script>
+    <div role="main" class="main">
+        <section class="page-top">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="row featured-boxes login">
-                            <div class="col-md-12">
-                                <div class="featured-box featured-box-secundary default info-content">
-                                    <div class="box-content">
-                                        <h4>Promotion</h4>
-                                        <img src="../../img/Two Biggest Disount.png" alt="Store Map" usemap="#storeMap" width="1050" height="620" id="storeMap">
-                                        <div id="mapOfStore"></div>
-                                    </div>
-                                </div>
-                            </div>
+                        <h2>Promotion</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div id="myCarousel" class="carousel slide" style="align-content: center;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active" style="align-content: center;">
+                            <img src="../../img/promotions/Two_Biggest_Promotion.png"
+                                alt="p0">
+                        </div>
+
+                        <div class="item">
+                            <img src="../../img/promotions/F_BM_212014-11-24.jpg" alt="p1" style="margin-bottom: 21px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="../../img/promotions/F_SC_402014-12-06.jpg" alt="p2" style="margin-bottom: 21px;">
+                        </div>
+
+                        <div class="item">
+                            <img src="../../img/promotions/F_CH_73.jpg" alt="p3" style="margin-bottom: 21px;">
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                // Disable auto-sliding
+                const myCarousel = document.querySelector('#myCarousel');
+                const carouselInstance = new bootstrap.Carousel(myCarousel, {
+                    interval: false, 
+                    wrap: false 
+                });
+            </script>
         </div>
-        <script src="../footer.js"></script>
+    </div>
+    <script src="../footer.js"></script>
 
-    </body>
+</body>
+
 </html>

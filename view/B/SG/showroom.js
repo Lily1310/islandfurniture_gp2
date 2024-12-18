@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="tooltip">
             ${item.name_price} <br>
             ${item.dimension} <br>
-            <a href="${item.link}" target="_blank" style="color: #ffcc00; text-decoration: underline;">Explore more designs</a>
+            <a href="${item.link}"  style="color: #ffcc00; text-decoration: underline;">Explore more designs</a>
         </div>
                 `;
 
